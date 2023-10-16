@@ -1,10 +1,10 @@
 public class LinearEquation {
-    private double x1;
-    private double x2;
-    private double y1;
-    private double y2;
+    private int x1;
+    private int x2;
+    private int y1;
+    private int y2;
 
-    public LinearEquation(double x1, double x2, double y1, double y2) {
+    public LinearEquation(int x1, int x2, int y1, int y2) {
         this.x1 = x1;
         this.x2 = x2;
         this.y1 = y1;

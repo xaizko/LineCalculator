@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8e549ef-904e-4b0e-bc0e-317a87bd0739" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LineCalculator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinearEquation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinearEquationLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinearEquationRunner.java" afterDir="false" />
+    <list default="true" id="f8e549ef-904e-4b0e-bc0e-317a87bd0739" name="Changes" comment="finished getting coordinate pairs as ints">
+      <change beforePath="$PROJECT_DIR$/src/LinearEquationLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinearEquationLogic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +44,19 @@
       <option name="presentableId" value="Default" />
       <updated>1697459781775</updated>
     </task>
+    <task id="LOCAL-00001" summary="finished getting coordinate pairs as ints">
+      <created>1697462514353</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697462514353</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finished getting coordinate pairs as ints" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished getting coordinate pairs as ints" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
