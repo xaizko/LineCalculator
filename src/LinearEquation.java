@@ -17,7 +17,7 @@ public class LinearEquation {
     public double distance() {
         double dx = Math.pow(x2-x1, 2);
         double dy = Math.pow(y2-y1, 2);
-        return  Math.round(Math.sqrt(dx+dy * 100) / 100);
+        return (double) Math.round(Math.sqrt(dx + dy) * 100) / 100;
     }
 
     public double slope() {

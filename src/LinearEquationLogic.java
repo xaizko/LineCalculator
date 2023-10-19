@@ -4,6 +4,7 @@ public class LinearEquationLogic {
     private String coordPair2;
     private Scanner myScanner;
     private LinearEquation pair;
+    private boolean continueSlope = true;
     public LinearEquationLogic() {
         myScanner = new Scanner(System.in);
         pair = null;
@@ -12,14 +13,18 @@ public class LinearEquationLogic {
         System.out.println("Welcome to the Linear equation calculator!");
         getCord();
         printInfo();
-
-        System.out.print("Would you like to enter another pair of coordinates? y/n: ");
-        String choice = myScanner.nextLine();
-        if (choice.equals("y")) {
-            getCord();
-            printInfo();
-        } else if (choice.equals("n")) {
-            System.out.println("Thank you for using the slope calculator, goodbye!");
+        while (continueSlope){
+            // start here
+            System.out.println();
+            System.out.print("Would you like to enter another pair of coordinates? y/n: ");
+            String choice = myScanner.nextLine();
+            if (choice.equals("y")) {
+                getCord();
+                printInfo();
+            } else if (choice.equals("n")) {
+                continueSlope = false;
+                System.out.println("Thank you for using the slope calculator, goodbye!");
+            }
         }
     }
     public void getCord() {
