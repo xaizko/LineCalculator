@@ -1,3 +1,5 @@
+import static java.lang.Integer.parseInt;
+
 public class LinearEquation {
     private int x1;
     private int x2;
@@ -19,16 +21,27 @@ public class LinearEquation {
     }
 
     public double slope() {
-        double slope = (y2-y1) / (x2-x1);
-        return Math.round(slope * 100) / 100;
+        double slope = (double) (y2 - y1) / (x2-x1);
+        return (double) Math.round(slope * 100) / 100;
     }
 
     public double yIntercept() {
         double slope = slope();
-        double b = y1 / (slope * x1);
-        return Math.round(b * 100) / 100;
+        double b = y1 - (slope * x1);
+        return (double) Math.round(b * 100) / 100;
     }
-//    public String equation() {
-//
-//    }
+    public String equation() {
+        int y3 = y2-y1;
+        int x3 = x2-x1;
+        if (y3 == 0) {
+            return "y = " + yIntercept();
+        } else {
+            return "y = " + y3 + "/" + x3 + "x + " + yIntercept();
+        }
+    }
+
+    public String coordinateForX(double x) {
+        double newY = x*slope()+yIntercept();
+        return "(" + x + ", " + newY + ")";
+    }
 }

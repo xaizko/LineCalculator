@@ -11,6 +11,16 @@ public class LinearEquationLogic {
     public void start() {
         System.out.println("Welcome to the Linear equation calculator!");
         getCord();
+        printInfo();
+
+        System.out.print("Would you like to enter another pair of coordinates? y/n: ");
+        String choice = myScanner.nextLine();
+        if (choice.equals("y")) {
+            getCord();
+            printInfo();
+        } else if (choice.equals("n")) {
+            System.out.println("Thank you for using the slope calculator, goodbye!");
+        }
     }
     public void getCord() {
         System.out.print("Enter coordinate 1: ");
@@ -27,7 +37,17 @@ public class LinearEquationLogic {
     }
 
     public void printInfo() {
+        System.out.println();
         System.out.println("The two points are: " + coordPair1 + " and " + coordPair2);
-        System.out.println("The equation of the line between these points is: " + ); // start here (start making equation function)
+        System.out.println("The equation of the line between these points is: " + pair.equation());
+        System.out.println("The slope of the line is: " + pair.slope());
+        System.out.println("The y-intercept of the line is: " + pair.yIntercept());
+        System.out.println("The distance between the two points is: " + pair.distance());
+        System.out.println();
+
+        System.out.print("Enter a value for x: ");
+        double newX = myScanner.nextDouble();
+        System.out.println("The point on the line is: " + pair.coordinateForX(newX));
+
     }
 }
