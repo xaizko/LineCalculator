@@ -1,3 +1,5 @@
+import java.awt.geom.RoundRectangle2D;
+
 import static java.lang.Integer.parseInt;
 
 public class LinearEquation {
@@ -17,18 +19,21 @@ public class LinearEquation {
     public double distance() {
         double dx = Math.pow(x2-x1, 2);
         double dy = Math.pow(y2-y1, 2);
-        return (double) Math.round(Math.sqrt(dx + dy) * 100) / 100;
+        return roundedToHundredth(Math.sqrt(dx+dy));
     }
 
+    public double roundedToHundredth(double roundNum){
+        return (double) Math.round(roundNum * 100) / 100;
+    }
     public double slope() {
         double slope = (double) (y2 - y1) / (x2-x1);
-        return (double) Math.round(slope * 100) / 100;
+        return roundedToHundredth(slope);
     }
 
     public double yIntercept() {
         double slope = slope();
         double b = y1 - (slope * x1);
-        return (double) Math.round(b * 100) / 100;
+        return roundedToHundredth(b);
     }
     public String equation() {
         int y3 = y2-y1;

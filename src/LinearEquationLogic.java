@@ -15,6 +15,7 @@ public class LinearEquationLogic {
         printInfo();
         while (continueSlope){
             // start here
+            myScanner.nextLine();
             System.out.println();
             System.out.print("Would you like to enter another pair of coordinates? y/n: ");
             String choice = myScanner.nextLine();
@@ -23,6 +24,8 @@ public class LinearEquationLogic {
                 printInfo();
             } else if (choice.equals("n")) {
                 continueSlope = false;
+                System.out.println("Thank you for using the slope calculator, goodbye!");
+            } else {
                 System.out.println("Thank you for using the slope calculator, goodbye!");
             }
         }
