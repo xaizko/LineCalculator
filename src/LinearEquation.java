@@ -40,6 +40,14 @@ public class LinearEquation {
         int x3 = x2-x1;
         if (y3 == 0) {
             return "y = " + yIntercept();
+        } else if (y3 % x3 == 0){
+            if (y3/x3 == 1){
+                return "y = x + " + yIntercept();
+            } else if (y3/x3 == -1) {
+                return "y = -x + " + yIntercept();
+            } else {
+                return "y = " + (y3 / x3) + "x + " + yIntercept();
+            }
         } else {
             return "y = " + y3 + "/" + x3 + "x + " + yIntercept();
         }
@@ -47,7 +55,7 @@ public class LinearEquation {
 
     public String coordinateForX(double x) {
         double newY = x*slope()+yIntercept();
-        return "(" + x + ", " + newY + ")";
+        return "(" + x + ", " + roundedToHundredth(newY) + ")";
     }
 
     public double getX3() {

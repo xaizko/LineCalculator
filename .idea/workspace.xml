@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8e549ef-904e-4b0e-bc0e-317a87bd0739" name="Changes" comment="fixed loop, added rounding">
+    <list default="true" id="f8e549ef-904e-4b0e-bc0e-317a87bd0739" name="Changes" comment="added vertical line">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinearEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinearEquation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinearEquationLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinearEquationLogic.java" afterDir="false" />
@@ -57,7 +57,8 @@
       <updated>1697459781775</updated>
       <workItem from="1697757433417" duration="660000" />
       <workItem from="1697852116273" duration="1713000" />
-      <workItem from="1697865525705" duration="3056000" />
+      <workItem from="1697865525705" duration="3666000" />
+      <workItem from="1697904288143" duration="1912000" />
     </task>
     <task id="LOCAL-00001" summary="finished getting coordinate pairs as ints">
       <created>1697462514353</created>
@@ -82,7 +83,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697853863879</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added vertical line">
+      <option name="closed" value="true" />
+      <created>1697869136151</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697869136151</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,7 +101,8 @@
     <MESSAGE value="finished getting coordinate pairs as ints" />
     <MESSAGE value="fixed distance need to do loop" />
     <MESSAGE value="fixed loop, added rounding" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed loop, added rounding" />
+    <MESSAGE value="added vertical line" />
+    <option name="LAST_COMMIT_MESSAGE" value="added vertical line" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

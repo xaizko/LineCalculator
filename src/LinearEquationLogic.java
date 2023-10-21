@@ -15,7 +15,7 @@ public class LinearEquationLogic {
         printInfo();
         while (continueSlope){
             if (pair.getX3() == 0) {
-                String bleh;
+                String bleh; // to get rid of weird scanning bugs
             } else {
                 myScanner.nextLine();
             }
