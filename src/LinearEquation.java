@@ -49,4 +49,12 @@ public class LinearEquation {
         double newY = x*slope()+yIntercept();
         return "(" + x + ", " + newY + ")";
     }
+
+    public double getX3() {
+        return x2-x1;
+    }
+
+    public int getX1() {
+        return x1;
+    }
 }

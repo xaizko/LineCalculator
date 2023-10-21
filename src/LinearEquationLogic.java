@@ -14,8 +14,11 @@ public class LinearEquationLogic {
         getCord();
         printInfo();
         while (continueSlope){
-            // start here
-            myScanner.nextLine();
+            if (pair.getX3() == 0) {
+                String bleh;
+            } else {
+                myScanner.nextLine();
+            }
             System.out.println();
             System.out.print("Would you like to enter another pair of coordinates? y/n: ");
             String choice = myScanner.nextLine();
@@ -26,6 +29,7 @@ public class LinearEquationLogic {
                 continueSlope = false;
                 System.out.println("Thank you for using the slope calculator, goodbye!");
             } else {
+                continueSlope = false;
                 System.out.println("Thank you for using the slope calculator, goodbye!");
             }
         }
@@ -46,16 +50,20 @@ public class LinearEquationLogic {
 
     public void printInfo() {
         System.out.println();
-        System.out.println("The two points are: " + coordPair1 + " and " + coordPair2);
-        System.out.println("The equation of the line between these points is: " + pair.equation());
-        System.out.println("The slope of the line is: " + pair.slope());
-        System.out.println("The y-intercept of the line is: " + pair.yIntercept());
-        System.out.println("The distance between the two points is: " + pair.distance());
-        System.out.println();
+        if (pair.getX3() == 0) {
+            System.out.println("These points are on the line: x = " + pair.getX1());
+        } else {
+            System.out.println("The two points are: " + coordPair1 + " and " + coordPair2);
+            System.out.println("The equation of the line between these points is: " + pair.equation());
+            System.out.println("The slope of the line is: " + pair.slope());
+            System.out.println("The y-intercept of the line is: " + pair.yIntercept());
+            System.out.println("The distance between the two points is: " + pair.distance());
+            System.out.println();
 
-        System.out.print("Enter a value for x: ");
-        double newX = myScanner.nextDouble();
-        System.out.println("The point on the line is: " + pair.coordinateForX(newX));
+            System.out.print("Enter a value for x: ");
+            double newX = myScanner.nextDouble();
+            System.out.println("The point on the line is: " + pair.coordinateForX(newX));
+        }
 
     }
 }
