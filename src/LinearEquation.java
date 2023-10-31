@@ -73,21 +73,19 @@ public class LinearEquation {
         if (getX3() == 0) {
             return "\nThese points are on the line: x = " + getX1();
         } else {
-            System.out.print("\nThe two points are: (" + x1 + ", " + y1 + ") and (" + x2 + ", " + y2 + ")\n" +
+            return "\nThe two points are: (" + x1 + ", " + y1 + ") and (" + x2 + ", " + y2 + ")\n" +
                     "The equation of the line between these points is: " + equation() + "\n" +
                     "The slope of the line is: " + slope() + "\n" +
                     "The y-intercept of the line is: " + yIntercept() + "\n" +
                     "The distance between the two points is: " + distance() + "\n" +
-                    "Enter a value for x: ");
-            Scanner scan = new Scanner(System.in);
-            double x = scan.nextDouble();
-            return "\nThe point on the line is: " + coordinateForX(x) + "\n";
+                    "Enter a value for x: ";
         }
     }
 
-//    public String printCalcX() {
-//        Scanner scan = new Scanner(System.in);
-//        double x = scan.nextDouble();
-//        return "The point on the line is: " + coordinateForX(x);
-//    }
+    public String printCalcX() {
+        Scanner scan = new Scanner(System.in);
+        double x = scan.nextDouble();
+        return "The point on the line is: "+ coordinateForX(x) +"\n";
+    }
+
 }
