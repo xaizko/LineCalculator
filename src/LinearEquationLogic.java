@@ -13,7 +13,7 @@ public class LinearEquationLogic {
         System.out.println("Welcome to the Linear equation calculator!");
         getCord();
         System.out.print(pair.printInfo());
-        System.out.println(pair.printCalcX());
+//        System.out.println(pair.printCalcX());
         while (continueSlope){
 //            if (pair.getX3() == 0) {
 //                String bleh; // to get rid of weird scanning bugs
